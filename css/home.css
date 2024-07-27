@@ -1,0 +1,266 @@
+.homeCarouselWrap {
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFDFA8 0%, #FFFBF4 100%) 0% 0% no-repeat;
+}
+
+.homeCarousel {
+    padding: 0 0;
+    position: relative;
+    display: block;
+}
+
+.homeCarousel .heading {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 0 20px;
+    font-family: 'Kugile Regular';
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgb(0 0 0 / 37%);
+    font-weight: 500;
+}
+
+.homeCarousel p {
+    font-size: 14px;
+    text-shadow: 1px 1px rgb(0 0 0 / 4%);
+}
+
+.homeCarousel img {}
+
+.homeCarouselSlide {
+    position: relative;
+}
+
+.homeCarouselSlide:after {
+    content: "";
+    background: rgb(0 0 0 / 53%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.homeCarouselSlide .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px rgb(0 0 0 / 4%);
+    z-index: 1;
+}
+
+.bgColorWrap {}
+
+.visionMissionRow {
+    margin: 0 auto 0;
+    padding: 50px 0;
+    background: var(--lightYellow);
+}
+
+.visionMissionRow .container {
+    display: flex;
+}
+
+.visionMissionRow h3 {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.visionMissionRow h3:after {
+    display: none
+}
+
+.missionCol {
+    padding: 0 5% 0 0;
+    margin: 0 5% 0 0;
+    border-right: solid 1px var(--primaryGolden);
+    width: 50%;
+}
+
+.visionCol {
+    width: 46%;
+}
+
+.firstPhaseSec {
+    padding: 80px 0;
+}
+
+.firstPhaseSec .content {
+    padding: 0 100px 0 15px;
+}
+
+.firstPhaseSec h4 {}
+
+.firstPhaseSec h3 {
+    margin: 0 0 50px;
+}
+
+.firstPhaseSec p {
+    margin: 0 0 30px;
+}
+
+.animatedCounterSec {
+    display: flex;
+    position: relative;
+    margin: -140px 0 0 210px;
+}
+
+.animatedCounterSec .item {
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 6%);
+    text-align: center;
+    padding: 28px 30px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.animatedCounterSec .item p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.animatedCounterSec .number {
+    font-size: 26px;
+}
+
+.projectSec {
+    padding: 140px 0 100px;
+    background: var(--lightYellow);
+    margin: -65px 0 0;
+}
+
+.projectSec h3 {
+    margin: 0 0 40px;
+}
+
+.projectSec p {}
+
+.projectSec .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 40px;
+    flex-wrap: wrap;
+}
+
+.projectSec .text_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectSec .text_link img {
+    height: 14px;
+}
+
+.projectSec .tabContent {
+    margin: 0;
+}
+
+.projectSec .buttons {
+    gap: 10px;
+    display: flex;
+    margin: 0 0 20px;
+}
+
+.projectSec .columns {
+    row-gap: 30px;
+}
+
+.testimonialSec {
+    padding: 100px 0;
+}
+
+.testimonialSec h3 {
+    margin: 0 0 30px;
+}
+
+.testimonial-carousel {
+    padding: 0;
+}
+
+.testiThumb {
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 6%);
+    position: relative;
+    padding: 20px 20px;
+    margin: 20px 8px;
+}
+
+.testiThumb .icon {
+    height: 20px;
+    width: auto !important;
+    right: 20px;
+    position: absolute;
+}
+
+.testiThumb .heading {
+    font-family: "Philosopher", sans-serif;
+    font-size: 20px;
+}
+
+.testiThumb .sub {
+    margin: 0 0 20px;
+    color: #999;
+}
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 767px) {
+
+    .homeCarousel .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .visionMissionRow {
+        padding: 20px 0;
+    }
+
+    .visionMissionRow .container {
+        flex-direction: column;
+    }
+
+    .missionCol, .visionCol {
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 0 0 30px;
+        border-right: 0;
+        border-bottom: solid 1px var(--primaryGolden);
+    }
+
+    .visionCol {
+        border-bottom: 0;
+        margin: 0;
+        padding: 0
+    }
+    
+    .animatedCounterSec {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .animatedCounterSec .item {
+    width: 50%;
+    }
+    .firstPhaseSec {
+        padding: 30px 0;
+    }
+    .firstPhaseSec .content {
+        padding: 0 15px;
+    }
+    .projectSec {
+        padding: 30px 0;
+        margin: 0;
+    }
+    .projectSec .tabs {
+        margin: 40px 0 10px;
+    }
+    .testimonial-carousel {
+        padding: 20px 0 00;
+    }
+    .testimonialSec {
+        padding: 30px 0;
+    }
+}

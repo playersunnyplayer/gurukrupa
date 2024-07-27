@@ -1,0 +1,358 @@
+@import url(variable.css);
+
+.ratingHeader {
+    margin: 0 0 10px;
+}
+
+.ratingHeader small {
+    margin: 0 0 0 10px;
+    color: #603509;
+   
+}
+
+.firstSec {
+    padding: 80px 0 0
+}
+
+.leftImgRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.leftImgWrap {
+    width: 40%;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin: 0 0 auto;
+}
+
+.mainImage {
+    border-radius: 5px;
+    box-shadow: none;
+    width: 80%;
+    order: 2;
+    text-align: center;
+}
+
+.leftImgThumbs {
+    gap: 10px;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    order: 1;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+
+.leftImgThumbs::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+.leftImgThumbs figure {
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+    border: 1px solid #707070;
+    cursor: pointer;
+    transition: all ease .2s
+}
+
+.leftImgThumbs figure:hover {
+    box-shadow: inset 0 0 20px rgb(219 133 32 / 52%);
+}
+
+#mainImg {
+    max-height: 500px;
+}
+
+.leftImg {
+    max-width: 100%;
+}
+
+.rightPDPcontent {
+    padding: 0 20px 0 50px;
+    width: 60%;
+    position: relative;
+    z-index: 0;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.priceSecRow {
+    margin: 0 0 20px;
+}
+
+.btnWrap {
+    display: flex;
+    gap: 20px;
+}
+
+.productAmt {
+    color: #603509;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin: 0 10px 10px 0;
+}
+
+.deleviredSec {
+    margin: 40px 0;
+}
+
+.deleviredSec label {
+    display: block;
+    color: #603509;
+    font-size: 12px;
+}
+
+.pinWrap {
+    position: relative;
+    margin: 20px 0 0;
+}
+
+.pinWrap input {
+    width: 100%;
+    background: no-repeat;
+    border: 0;
+    border-bottom: 1px solid #707070;
+    padding: 0 70px 0 0;
+}
+
+.pinWrap button {
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: 0;
+    color: #603509;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.decPara {
+    color: #603509;
+}
+
+.decPara p {
+    margin: 0 0 20px
+}
+
+.stickyMenuWrapSec {
+    display: unset;
+    position: relative;
+    z-index: 31;
+}
+
+.stickyMenuSec {
+    background: #FEF3F3;
+    box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.25);
+    display: none;
+    padding: 10px 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    transition: all ease .2s;
+}
+
+.stickyMenuSec .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stickyMenuSec h3 {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.stickyMenuSec figure {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    margin: auto 20px auto 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.stickyMenuSec .cost {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 1px;
+}
+
+.stickyMenuSec .btn-primary {
+    margin: 0 0 0 auto;
+    width: 300px;
+    max-width: 300px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.stickyMenuSec .rightSec {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stickyMenuSec.fixed {
+    position: fixed;
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+.firstPera {
+    color: #603509;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 10px;
+}
+
+.size {
+    font-weight: 800;
+}
+
+.optimumSec {
+    background: #FEF1EB;
+    padding: 50px 0;
+    color: #603509;
+}
+
+.optimumSec p {
+    margin: 0 0 20px;
+}
+
+.liveSec {
+    background: #FFEBEB;
+    padding: 50px 0;
+    color: #603509;
+}
+
+.liveSec p {
+    margin: 0 0 20px;
+}
+
+.liveSec .innerImg {
+    margin: 0 0 0 auto;
+    max-width: 90%;
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .stickyMenuSec .rightSec {
+        flex-wrap: wrap;
+    }
+
+    .stickyMenuSec .btn-primary {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 980px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 767px) {
+
+    .leftImgWrap,
+    .rightPDPcontent {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftImgThumbs {
+        order: 2;
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+    }
+
+    .mainImage {
+        order: 1;
+        width: auto;
+        max-height: 300px;
+    }
+
+    #mainImg {
+        max-height: inherit;
+    }
+
+    .firstSec {
+        padding: 30px 0 0;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .rightPDPcontent {
+        padding: 0;
+        height: auto;
+    }
+
+    .stickyMenuSec .container {
+        padding: 0 20px;
+    }
+
+    .stickyMenuSec figure {
+        display: none;
+    }
+
+    .stickyMenuSec .contentSec,
+    .stickyMenuSec .cost {
+        font-size: inherit;
+    }
+
+    .stickyMenuSec .addon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 0 0 10px;
+    }
+
+    .stickyMenuSec .addon label {
+        margin: 0
+    }
+
+    .stickyMenuSec .rightSec {
+        width: 100%;
+        display: flex;
+        margin: 10px 0 0;
+    }
+
+    .stickyMenuSec .rightSec .btn {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 12px;
+        font-size: 10px;
+    }
+
+    .tab-content {
+        padding: 20px 0 0 0;
+    }
+
+    footer {
+        padding: 0px 0 130px;
+    }
+}
